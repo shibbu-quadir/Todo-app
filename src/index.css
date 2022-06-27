@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.heading{
+  padding:30px 0px;
+  text-align:center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform:capitalize;
+  size: 15px;;
+  letter-spacing:2px;
+  font-weight:500;
+  background-color:black;
+  font: size 1.5re;;
+  margin-bottom:30px;
 }
+.spans{
+  font-weight:bold;
+}
+div{
+  width:100%;
+  color:white;
+  height:100vh;
+background:black;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+.add_it{
+  padding: 4px 8px;
+  background:RED;
+  color:white;
+  border:2px solid #ecf021;
+  outline:none;
+  cursor:pointer;
+  border-radius: 50px;
+  }
+input{
+  height: 30px;
+  width:60%;
+  padding:10px 20px;
+  border:none;
+  outline:none;
+  margin:20px 0;
+  text-align:center;
+}
+.main_div{
+  width:100%;
+  height:100vh;
+  backgroud:black;;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+align-items:center;
+text-align:center;
+}
+.middle_div{
+  width:25%;
+  box-shadow:rgba(0,0,0,0.25) 0px 25px 50px -12px;
+  height:80vh;
+  background-color:#ffff;
+  color:black;
+  border:solid 5px solid #f3f3;
+  border: radius 16px;
+}
+h1{
+  color:white;
+  background:transparent;background-color:#8566aa;
+margin-bottom:10px;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+li{
+  box-shadow:rgba(0,0,0,0.25) 0px 25px 50px -12px;
+  
+  box-sizing:border-box;
+  font-family:'Courier New', Courier, monospace;
+  
+  margin:2px;
+  
+  font-weight:bold;
+  counter-reset: cupcake;
+  
+  
+}
+.deletebyOne{
+  float:right;
+  border:none;
+  outline:none;
+  transition:cubic-bezier(0.19, 1, 0.22, 1);
+  cursor:pointer;
+  left: 60.50%;
+  position: fixed;
+}
+@media screen and (max-width:500px) {
+  .middle_div{
+    width:75%;
+        height:60vh;
+        background-color:orange;
+      } 
+      input{
+        height: 8px;
+        width:60%;
+        padding:10px 20px;
+                margin:20px 0;
+      }
+      .deletebyOne{
+                left: 85.5%;
+        margin:1px;
+        position:fixed;
+      }
+      li{
+ text-align:center;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin:1px;     
+              }     
 }
